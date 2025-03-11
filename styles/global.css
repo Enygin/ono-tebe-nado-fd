@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-background-color: grey;  /* общий цвет фона */
+  scroll-behavior: smooth;          /* плавный скролл*/
+}
+
 body {
   width: 1100px;
   margin: 0 auto;
