@@ -5,7 +5,6 @@
 }
 
 :root {
-  --main-background-color: grey;  /* общий цвет фона */
   scroll-behavior: smooth;          /* плавный скролл*/
 }
 

@@ -15,9 +15,10 @@
     <header class="header">
 
       <!-- список меню -->
-      <nav сlass="header__menu">
+      <nav class="header__menu">                                  <!-- исправлено после ревью: исправлена опечатка в наименовании атрибута class -->
         <ul class="header__links-list">
-          <li class="header__links-list-item header__links-list-item_no-bullit">
+          <li class="header__links-list-item">                    <!-- исправлено после ревью: удален класс header__links-list-item_no-bullit 
+                                                                                               вместо него применен метод first-of-type -->
             <a class="header__link header__link_active"
             href="#cover">главная</a>
           </li>
@@ -77,13 +78,15 @@
 
           <!-- контейнер для подзаголовка и кнопки -->
         <div class="cover__description">
-          <h2 class="cover__description-text">
-            Аукцион вещей, в которые никто не верил
-          </h2>
 
-          <button class="bet-button"
-          name="button">
-                <!-- TODO: тут нужен спан? узнать по наполнению тега баттон-->
+          <!-- подзаголовок -->
+          <p class="cover__description-text">                     <!-- исправлено после ревью: тег <h2> заменен на <p> -->
+            Аукцион вещей, в которые никто не верил
+          </p>
+
+          <!-- кнопка -->
+          <button class="bet-button"                   
+                  name="button">
             сделать ставку
           </button>
         </div>
@@ -109,9 +112,9 @@
                href="#0">
               <div class="overlay"></div>
               <article class="card">
-                <h3 class="card__title">
+                <p class="card__title">                           <!-- исправлено после ревью: тег <h3> заменен на <p> -->
                   Фильм режиссёра, который бросил киношколу
-                </h3>
+                </p>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. 
                   Какой была бы ваша ставка, если бы вы не знали, 
@@ -128,9 +131,9 @@
               <div class="overlay"></div>
               <article class="card">
                 
-                <h3 class="card__title">
+                <p class="card__title">                                     <!-- исправлено после ревью: тег <h3> заменен на <p> -->
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h3>
+                </p>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания 
                   и с переходами на древнеанглийский. В ней одновременно рассказывается 
@@ -148,9 +151,9 @@
                href="#0">
               <div class="overlay"></div>
               <article class="card">
-                <h3 class="card__title">
+                <p class="card__title">                                     <!-- исправлено после ревью: тег <h3> заменен на <p> -->
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h3>
+                </p>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе 
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
@@ -208,7 +211,7 @@
       <!-- подвал сайта -->
 
       <!-- контактная информация в подвале-->
-      <address class="footer__address">
+      <address class="footer__address">                                     <!-- исправлено после ревью: исправлена опечатка в наименовании атрибута class -->
         <ul class="address">
           <li>
             <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -223,7 +226,7 @@
       </address>
 
       <!-- список меню -->
-      <nav сlass="footer__menu">
+      <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
             <a class="footer__menu-link footer__menu-link_active"

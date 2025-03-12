@@ -1,7 +1,7 @@
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    height: 293px;
+    min-height: 293px;                   /* исправлено после ревью: свойство height заменено на min-height */
     align-items: center;
     padding: 0;
     grid-template-areas:
@@ -22,9 +22,13 @@
     list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item:first-of-type { /* исправлено после ревью: использован метод first-of-type для удаления маркера у первого элемента меню */
     list-style: none;
 }
+
+/* .header__links-list-item_no-bullit {     исправлено после ревью: изначальное решение по удалению маркера у первого элемента меню через отдельный класс 
+    list-style: none;
+}*/
 
 .header__link {
     font-size: 18px;
@@ -53,7 +57,7 @@
 .header__address {
     grid-area: contact;
     padding-right: 50px;
-    width: 290px;
+    max-width: 290px;                    /* исправлено после ревью: свойство width заменено на max-width */
     justify-self: end;
 }
 
@@ -66,7 +70,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 757px;
+    min-height: 757px;                   /* исправлено после ревью: свойство height заменено на min-height */
     margin-bottom: 180px;
     text-transform: uppercase;
     color: #fff;
@@ -85,7 +89,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 385px;
+    /* height: 385px; */                 /* исправлено после ревью: удалено свойство height: 385px */
     margin: 165px 50px 0 50px;
     z-index: 1;
 }
@@ -97,6 +101,7 @@
 
 .aligned-text_center {
     text-align: center;
+    margin: 18px;                        /* добавил отступ между строками */
 }
 
 .aligned-text_right {
@@ -117,7 +122,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 50px 50px 50px;
-    height: 51px;
+    /* height: 51px; */                  /* исправлено после ревью: удалено свойство height: 51px */
     z-index: 1;
 }
 
@@ -139,8 +144,12 @@
     font-weight: 400;
 }
 
+.bet-button:hover {                      /* исправлено после ревью: стилизована кнопка при наведении курсора */
+    font-size: 24px;
+}
+
 .lots {
-    height: 723px;
+    min-height: 723px;                   /* исправлено после ревью: свойство height заменено на min-height */
     margin: 0 24px 155px 24px;
 }
 
@@ -148,20 +157,20 @@
     text-transform: uppercase;
     font-size: 40px;
     padding-left: 40px;
-    margin-bottom: 27px;
 }
 
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 27px 0 30px 0;
     list-style: none;
     gap: 25px;
 }
 
 .lots__card-list-item {
     max-width: 334px;
-    height: 596px;
+    min-height: 596px;                   /* исправлено после ревью: свойство height заменено на min-height */
     position: relative;
 }
 
@@ -204,6 +213,7 @@
     text-decoration : underline;
     z-index: 1;
     font-size: 22px;
+    font-weight: 700;
     margin-block: 0;
 }
 
@@ -212,17 +222,17 @@
     z-index: 1;
     font-size: 20px;
     margin-block: 0;
+    line-height: 120%;
 }
 
 .lots__look-more-link {
-    position: relative;
-    top: 33px; 
+    text-decoration: underline;
     font-size: 20px;
     padding-left: 40px;
 }
 
 .about {
-    height: 595px;
+    min-height: 595px;                   /* исправлено после ревью: свойство height заменено на min-height */
     padding: 0 24px;
     margin-bottom: 147px;
 }
@@ -270,7 +280,7 @@
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 180px;
+    min-height: 180px;                   /* исправлено после ревью: свойство height заменено на min-height */
     grid-template-areas:
     "contact menu social-natwork";
 }
