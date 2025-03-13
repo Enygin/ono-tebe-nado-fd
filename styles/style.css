@@ -1,11 +1,11 @@
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    min-height: 293px;                   /* исправлено после ревью: свойство height заменено на min-height */
+    min-height: 293px;
     align-items: center;
     padding: 0;
     grid-template-areas:
-    "menu logo contact";
+    'menu logo contact';
 }
 
 .header__menu {
@@ -22,13 +22,9 @@
     list-style: circle;
 }
 
-.header__links-list-item:first-of-type { /* исправлено после ревью: использован метод first-of-type для удаления маркера у первого элемента меню */
+.header__links-list-item:first-of-type {
     list-style: none;
 }
-
-/* .header__links-list-item_no-bullit {     исправлено после ревью: изначальное решение по удалению маркера у первого элемента меню через отдельный класс 
-    list-style: none;
-}*/
 
 .header__link {
     font-size: 18px;
@@ -57,7 +53,7 @@
 .header__address {
     grid-area: contact;
     padding-right: 50px;
-    max-width: 290px;                    /* исправлено после ревью: свойство width заменено на max-width */
+    max-width: 290px;
     justify-self: end;
 }
 
@@ -65,12 +61,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("../images/cover.jpg");
+    background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    min-height: 757px;                   /* исправлено после ревью: свойство height заменено на min-height */
+    min-height: 757px;
     margin-bottom: 180px;
     text-transform: uppercase;
     color: #fff;
@@ -89,7 +85,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 385px; */                 /* исправлено после ревью: удалено свойство height: 385px */
     margin: 165px 50px 0 50px;
     z-index: 1;
 }
@@ -101,7 +96,7 @@
 
 .aligned-text_center {
     text-align: center;
-    margin: 18px;                        /* добавил отступ между строками */
+    margin: 18px;
 }
 
 .aligned-text_right {
@@ -122,7 +117,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 50px 50px 50px;
-    /* height: 51px; */                  /* исправлено после ревью: удалено свойство height: 51px */
     z-index: 1;
 }
 
@@ -144,12 +138,12 @@
     font-weight: 400;
 }
 
-.bet-button:hover {                      /* исправлено после ревью: стилизована кнопка при наведении курсора */
+.bet-button:hover {
     font-size: 24px;
 }
 
 .lots {
-    min-height: 723px;                   /* исправлено после ревью: свойство height заменено на min-height */
+    min-height: 723px;
     margin: 0 24px 155px 24px;
 }
 
@@ -170,7 +164,7 @@
 
 .lots__card-list-item {
     max-width: 334px;
-    min-height: 596px;                   /* исправлено после ревью: свойство height заменено на min-height */
+    min-height: 596px;
     position: relative;
 }
 
@@ -188,21 +182,21 @@
 }
 
 .card_type_film {
-    background-image: url("../images/card-lot-01.jpg");
+    background-image: url(../images/card-lot-01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .card_type_book {
-    background-image: url("../images/card-lot-02.jpg");
+    background-image: url(../images/card-lot-02.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .card_type_picture {
-    background-image: url("../images/card-lot-03.jpg");
+    background-image: url(../images/card-lot-03.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -210,7 +204,7 @@
 
 .card__title {
     text-transform: uppercase;
-    text-decoration : underline;
+    text-decoration: underline;
     z-index: 1;
     font-size: 22px;
     font-weight: 700;
@@ -232,7 +226,7 @@
 }
 
 .about {
-    min-height: 595px;                   /* исправлено после ревью: свойство height заменено на min-height */
+    min-height: 595px;
     padding: 0 24px;
     margin-bottom: 147px;
 }
@@ -243,8 +237,8 @@
     grid-template-rows: auto auto;
     gap: 10px;
     grid-template-areas:
-    "logo title"
-    ". text";
+    'logo title'
+    '. text';
 }
 
 .about__logo {
@@ -280,9 +274,9 @@
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    min-height: 180px;                   /* исправлено после ревью: свойство height заменено на min-height */
+    min-height: 180px;
     grid-template-areas:
-    "contact menu social-natwork";
+    'contact menu social-natwork';
 }
 
 .footer__address {
