@@ -247,11 +247,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 240px; 
+    width: 240px;
     height: 240px;
     background: #000;
     border-radius: 50%;
-    place-self: center;      
+    place-self: center;
 }
 
 .about__logo-image {
